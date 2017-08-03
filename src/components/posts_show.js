@@ -39,9 +39,11 @@ class PostsShow extends Component {
           <button className="btn btn-danger" onClick={this.handleDelete.bind(this)}>Delete Post</button>
         </div>
         <div className="list-group">
-          <h3 className="list-group-item" >{post.title}</h3>
-          <h6 className="list-group-item"><strong>Categories: </strong>{post.categories}</h6>
-          <p className="list-group-item"><strong>Content: </strong>{post.content}</p>
+          <h2>{post.title}</h2>
+          <h6 style={{marginTop: "10px"}}>Categories: </h6>
+          <p className="list-group-item">{post.categories}</p>
+          <h6 style={{marginTop: "10px"}}>Content: </h6>
+          <p className="list-group-item">{post.content}</p>
         </div>
       </div>
     );
