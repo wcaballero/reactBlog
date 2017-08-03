@@ -51,7 +51,6 @@ class PostsShow extends Component {
 }
 
 //use mapStateToProps to fetch the state of the post and read data from the promise
-
 function mapStateToProps(state) {
   return {
     //currently selected post
