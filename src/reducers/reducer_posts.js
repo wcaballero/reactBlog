@@ -2,7 +2,7 @@
 // followed by a switch statement to choose the action
 
 // import action type
-import {FETCH_POSTS, CREATE_POST} from '../actions/index';
+import {FETCH_POSTS, FETCH_POST, CREATE_POST} from '../actions/index';
 
 
 
@@ -21,6 +21,8 @@ export default function(state= INITIAL_STATE, action ){
     // ...state returns a new state and concats to all:action.payload.data
     case FETCH_POSTS:
       return { ...state, all: action.payload.data};
+    case FETCH_POST:
+      return { ...state, post: action.payload.data};
     case CREATE_POST:
       return {...state, post: action.payload.data};
     default:

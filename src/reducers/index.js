@@ -6,7 +6,7 @@ import {reducer as formReducer } from 'redux-form';
 
 
 const rootReducer = combineReducers({
-  // passes the state to all containers
+  // passes the state to all containers as props
   posts: PostsReducer,
   form: formReducer
 });
